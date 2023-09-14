@@ -1,0 +1,22 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  
+  legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+  }
+
+  .filters-component {
+    height: 100vh;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+  }
+}
