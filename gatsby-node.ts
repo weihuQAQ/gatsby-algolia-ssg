@@ -2,6 +2,8 @@ import type { GatsbyNode } from "gatsby";
 import path from "path";
 import { generateAlgoliaInitialResults } from "./src/utils/server";
 
+const defaultIndex = String(process.env.ALGOLIA_DEFAULT_INDEX)
+
 export const createPages: GatsbyNode["createPages"] = async ({ actions }) => {
   const { createPage } = actions;
 
@@ -11,7 +13,7 @@ export const createPages: GatsbyNode["createPages"] = async ({ actions }) => {
     {
       uri: "/b/red",
       title: "Test PLP",
-      defaultIndex: "YourIndex",
+      defaultIndex: defaultIndex,
       hardFilters: {
         prod_gender: {
           type: "",

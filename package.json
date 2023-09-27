@@ -8,9 +8,10 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop -p 8001",
+    "dev": "gatsby develop -p 8002",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "preview": "gatsby build && gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
   },
@@ -20,6 +21,7 @@
     "@mui/icons-material": "^5.14.9",
     "@mui/material": "^5.14.9",
     "algoliasearch": "^4.20.0",
+    "dotenv": "^16.3.1",
     "gatsby": "^5.12.4",
     "gatsby-plugin-sass": "^6.12.0",
     "prettier": "^3.0.3",
@@ -32,6 +34,7 @@
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "eslint-config-react-app": "^7.0.1",
     "typescript": "^5.1.6"
   }
 }

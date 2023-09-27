@@ -1,0 +1,26 @@
+.page {
+    position: relative;
+}
+
+.message-bar {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+.content {
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #ececec;
+    border: 1px solid #666;
+    position: sticky;
+    top: 0;
+}
